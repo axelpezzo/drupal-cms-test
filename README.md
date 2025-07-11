@@ -18,8 +18,8 @@ ddev config --project-type=drupal11 --docroot=web
 ddev start
 ```
 
-* `ddev config` creerà il file `.ddev/config.yaml` e configurerà l'ambiente locale.
-* `ddev start` avvierà i container (web server, database, PHP) e creerà un database vuoto.
+- `ddev config` creerà il file `.ddev/config.yaml` e configurerà l'ambiente locale.
+- `ddev start` avvierà i container (web server, database, PHP) e creerà un database vuoto.
 
 ## 4. Installa le dipendenze Composer
 
@@ -69,24 +69,9 @@ Se la configurazione del sito (tipi di contenuto, campi, viste, ecc.) deve esser
 ddev drush cim
 ```
 
-> **Nota**: Se non trovi una cartella `config/sync` nel progetto, questo passaggio potrebbe non essere necessario, in quanto la configurazione potrebbe essere già stata applicata tramite le ricette o inclusa nel database.
+> **Nota**: Se non trovi una cartella `sync` nel progetto, questo passaggio potrebbe non essere necessario, in quanto la configurazione potrebbe essere già stata applicata tramite le ricette o inclusa nel database.
 
-## 8. Importa i File Utente (se necessario)
-
-Se hai ricevuto una cartella con i file utente separatamente:
-
-```bash
-# Esempio: Se hai una cartella 'files_backup' nella radice del tuo progetto
-cp -r files_backup/* web/sites/default/files/
-```
-
-In alternativa, puoi usare DDEV per copiare i file:
-
-```bash
-ddev import-files --src=files_backup
-```
-
-## 9. Avvia il sito nel browser
+## 8. Avvia il sito nel browser
 
 ```bash
 ddev launch
