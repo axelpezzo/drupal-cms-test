@@ -1,0 +1,6 @@
+@import url("./base/base.css");
+@import url("./elements/language-switcher.css");
+
+body {
+  background-color: initial;
+}

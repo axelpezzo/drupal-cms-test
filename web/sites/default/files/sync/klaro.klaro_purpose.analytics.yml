@@ -1,0 +1,10 @@
+uuid: d2e8280d-084d-4452-9c2d-c3c026c6045c
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DaAAmHlWMVahC2MmhRKQN8Lun9hBPT6LR6PCjkCEikI
+id: analytics
+label: Analisi
+description: ''
+weight: 1

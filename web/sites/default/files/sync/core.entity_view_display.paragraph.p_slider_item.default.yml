@@ -1,0 +1,31 @@
+uuid: be75f6f3-cc4e-47be-b9ed-aeb84923a6d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_slider_item.field_p_slider_item_caption
+    - field.field.paragraph.p_slider_item.field_p_slider_item_picture
+    - paragraphs.paragraphs_type.p_slider_item
+id: paragraph.p_slider_item.default
+targetEntityType: paragraph
+bundle: p_slider_item
+mode: default
+content:
+  field_p_slider_item_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_slider_item_picture:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

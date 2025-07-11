@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Render\Element;
+
+function theme_custom_preprocess_page(array &$variables) {
+  
+}
+
+function theme_custom_preprocess_node(&$variables) {
+  $node = $variables['node'];
+
+  // Carica la libreria dello slider solo se il nodo ha il campo 'field_home_slider'
+  // e se quel campo contiene almeno un Paragraph.
+  if ($node->hasField('field_home_slider') && !$node->get('field_home_slider')->isEmpty()) {
+    $variables['#attached']['library'][] = 'theme_custom/theme_custom_slider';
+  }
+}

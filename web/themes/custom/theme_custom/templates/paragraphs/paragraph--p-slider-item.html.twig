@@ -1,0 +1,15 @@
+{# templates/paragraphs/paragraph--p-slider-item.html.twig #}
+
+<div{{ attributes.addClass('slide-item') }}>
+  {% if content.field_p_slider_item_picture %}
+    <div class="slide-image">
+      {{ content.field_p_slider_item_picture }}
+    </div>
+  {% endif %}
+
+  {% if content.field_p_slider_item_caption %}
+    <div class="slide-text">
+      {{ content.field_p_slider_item_caption }}
+    </div>
+  {% endif %}
+</div>

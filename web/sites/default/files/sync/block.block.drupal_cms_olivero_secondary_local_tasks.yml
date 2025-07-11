@@ -1,0 +1,22 @@
+uuid: 47315b31-d002-4206-b053-43fbf5c9d74d
+langcode: it
+status: true
+dependencies:
+  theme:
+    - drupal_cms_olivero
+_core:
+  default_config_hash: 3KAyDgB3FHENrBwroAUcCPvkfPHBMFcRDnsZFyFMuwc
+id: drupal_cms_olivero_secondary_local_tasks
+theme: drupal_cms_olivero
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Schede secondarie'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

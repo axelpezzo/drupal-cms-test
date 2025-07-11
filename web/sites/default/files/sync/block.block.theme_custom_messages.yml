@@ -1,0 +1,22 @@
+uuid: 3c79e19c-5e5b-4974-8f83-2e53122b1cdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_custom
+_core:
+  default_config_hash: 5ra2HNIksWbp6AhPpTufTGSlgx2FR7RR_ssxdjgFg4I
+id: theme_custom_messages
+theme: theme_custom
+region: content
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

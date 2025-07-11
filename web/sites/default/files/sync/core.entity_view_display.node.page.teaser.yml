@@ -1,0 +1,24 @@
+uuid: 7b1aaf62-6467-4ea8-8d1d-e9e05a766e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_home_content
+    - field.field.node.page.field_home_slider
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: T4x4GidpcZanW89XGB9jlCvGB7-7ks7ZXUGkaP5s-Fo
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_home_content: true
+  field_home_slider: true
+  langcode: true
+  links: true

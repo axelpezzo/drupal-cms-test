@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+langcode: it
+uuid: 4139e90d-3048-4384-a52e-bb855c3d15d3
+name: 'Drupal TEST'
+mail: axel.pezzo@gmail.com
+slogan: ''
+page:
+  403: /user/login
+  404: ''
+  front: /node/4
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

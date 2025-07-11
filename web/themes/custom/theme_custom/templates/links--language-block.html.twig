@@ -1,0 +1,31 @@
+{#
+  Override del blocco di cambio lingua.
+  Template: links--language-block.html.twig
+#}
+
+{% if links %}
+  <form class="language-switcher-form" method="get">
+    {% if heading %}
+      <label for="language-switcher-select" class="visually-hidden">
+        {{ heading.text }}
+      </label>
+    {% endif %}
+
+    <select
+      id="language-switcher-select"
+      name="language"
+      onchange="if (this.value) window.location.href=this.value;"
+    >
+      {% for key, link in links %}
+        <option
+          value="{{ link.url }}"
+          {% if 'is-active' in link.attributes.class %}
+            selected
+          {% endif %}
+        >
+          {{ key }}
+        </option>
+      {% endfor %}
+    </select>
+  </form>
+{% endif %}

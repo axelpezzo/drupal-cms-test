@@ -1,0 +1,27 @@
+uuid: 3d81c258-d7aa-4db2-a78d-89ee052303f1
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - drupal_cms_olivero
+_core:
+  default_config_hash: AxWDrwFefyIiVf0vG6YWbCQ7fTFWW63b-rbbriJEfXA
+id: drupal_cms_olivero_footer_menu
+theme: drupal_cms_olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Piè di pagina'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

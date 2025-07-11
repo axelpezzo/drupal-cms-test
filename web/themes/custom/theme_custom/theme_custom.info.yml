@@ -1,0 +1,13 @@
+name: "Theme Custom"
+type: theme
+description: "Tema custom basato su Olivero."
+core_version_requirement: ^11
+base theme: false
+package: Custom
+version: "1.0"
+libraries:
+  - theme_custom/global-styling
+regions:
+  header: "Header"
+  content: "Content"
+  footer: "Footer"

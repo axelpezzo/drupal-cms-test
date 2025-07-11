@@ -1,0 +1,22 @@
+# Italian translation of CAPTCHA: Friendly Captcha (1.1.4)
+# Copyright (c) 2025 by the Italian translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CAPTCHA: Friendly Captcha (1.1.4)\n"
+"POT-Creation-Date: 2025-04-22 14:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "General settings"
+msgstr "Impostazioni generali"
+msgid "Configuration"
+msgstr "Configurazione"
+msgid "Spam control"
+msgstr "Controllo spam"
+msgid "About"
+msgstr "Informazioni"

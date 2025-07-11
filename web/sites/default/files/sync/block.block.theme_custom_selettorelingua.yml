@@ -1,0 +1,28 @@
+uuid: 1648d3fe-31dc-472e-a36e-e9d03c4d572c
+langcode: it
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - theme_custom
+id: theme_custom_selettorelingua
+theme: theme_custom
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Selettore lingua'
+  label_display: '0'
+  provider: language
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      it: it

@@ -1,0 +1,34 @@
+uuid: 88242d21-a6fa-457f-9e2a-29f6b29b8a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-4
+  module:
+    - language
+    - system
+  theme:
+    - theme_custom
+id: theme_custom_footer4
+theme: theme_custom
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-4'
+settings:
+  id: 'system_menu_block:footer-4'
+  label: 'Footer 4'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      it: it

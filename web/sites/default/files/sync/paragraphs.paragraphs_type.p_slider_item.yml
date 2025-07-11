@@ -1,0 +1,10 @@
+uuid: 66e05bba-14f2-45c3-b4ed-33a4eca4ce6f
+langcode: en
+status: true
+dependencies: {  }
+id: p_slider_item
+label: 'Slider item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

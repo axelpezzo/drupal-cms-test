@@ -1,0 +1,29 @@
+uuid: 9c0fa1ec-02ef-400f-aadf-3ac81e3de2a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.page.field_home_content
+    - field.field.node.page.field_home_slider
+    - node.type.page
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 6WriJ20_O2OwaTgXGmR-JxzZrJPCG4MJqugHf_U4454
+id: node.page.card
+targetEntityType: node
+bundle: page
+mode: card
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_home_content: true
+  field_home_slider: true
+  langcode: true
+  links: true

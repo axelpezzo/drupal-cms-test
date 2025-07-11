@@ -1,0 +1,152 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* @theme_custom/partials/header.html.twig */
+class __TwigTemplate_5a91e19d1de5309c2bca9ea09a5b12bf extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+        $this->sandbox = $this->extensions[SandboxExtension::class];
+        $this->checkSecurity();
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        // line 2
+        yield $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->attachLibrary("theme_custom/header"), "html", null, true);
+        yield "
+
+<div class=\"header\">
+  <div class=\"container\">
+    <div class=\"header__top\">
+      <div class=\"header__logo\">
+        ";
+        // line 8
+        yield $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["page"] ?? null), "header", [], "any", false, false, true, 8), "theme_custom_sitebranding", [], "any", false, false, true, 8), "html", null, true);
+        yield "
+      </div>
+      <div class=\"header__search\">
+        ";
+        // line 11
+        yield $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["page"] ?? null), "header", [], "any", false, false, true, 11), "theme_custom_searchform", [], "any", false, false, true, 11), "html", null, true);
+        yield "
+      </div>
+      <div class=\"header__actions\">
+        <div class=\"header__language\">
+          ";
+        // line 15
+        yield $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["page"] ?? null), "header", [], "any", false, false, true, 15), "theme_custom_selettorelingua", [], "any", false, false, true, 15), "html", null, true);
+        yield "
+        </div>
+        <div class=\"header__theme_switcher\">
+          <svg width=\"22\" height=\"22\" viewBox=\"0 0 22 22\" fill=\"none\">
+            <path d=\"M11.0001 14.0481C11.8468 14.0481 12.5673 13.7517 13.1615 13.159C13.7558 12.5663 14.0529 11.8466 14.0529 10.9999C14.0529 10.1532 13.7562 9.43268 13.1628 8.83845C12.5695 8.24423 11.849 7.94712 11.0013 7.94712C10.1536 7.94712 9.43348 8.2438 8.84087 8.83715C8.24823 9.43051 7.95192 10.151 7.95192 10.9987C7.95192 11.8464 8.24827 12.5665 8.84097 13.1591C9.43367 13.7518 10.1534 14.0481 11.0001 14.0481ZM11.0002 15.4471C9.7648 15.4471 8.71475 15.0143 7.85002 14.1487C6.98528 13.2832 6.55292 12.2332 6.55292 10.9987C6.55292 9.76433 6.9857 8.71395 7.85127 7.84762C8.71682 6.98127 9.76681 6.5481 11.0012 6.5481C12.2357 6.5481 13.286 6.98121 14.1524 7.84745C15.0187 8.71368 15.4519 9.76447 15.4519 10.9998C15.4519 12.2352 15.0188 13.2852 14.1525 14.15C13.2863 15.0147 12.2355 15.4471 11.0002 15.4471ZM3.95192 11.6971H0.302917V10.2981H3.95192V11.6971ZM21.7019 11.6971H18.0529V10.2981H21.7019V11.6971ZM10.3029 3.94712V0.298096H11.7019V3.94712H10.3029ZM10.3029 21.6971V18.0481H11.7019V21.6971L10.3029 21.6971ZM5.57309 6.50382L3.29137 4.31537L4.29037 3.26637L6.49807 5.5231L5.57309 6.50382ZM17.7096 18.7336L15.5115 16.4615L16.4269 15.4913L18.7086 17.6846L17.7096 18.7336ZM15.4962 5.5731L17.6846 3.29137L18.7336 4.29037L16.4769 6.49325L15.4962 5.5731ZM3.26637 17.7096L5.53847 15.5067L6.48939 16.4269L4.31827 18.7057L3.26637 17.7096Z\" fill=\"black\"/>
+          </svg>
+        </div>
+        <div class=\"header__cta\">
+          ";
+        // line 23
+        yield $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["page"] ?? null), "header", [], "any", false, false, true, 23), "theme_custom_ctaheader", [], "any", false, false, true, 23), "html", null, true);
+        yield "
+        </div>
+      </div>
+    </div>
+    <div class=\"header__nav\">
+      ";
+        // line 28
+        yield $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["page"] ?? null), "header", [], "any", false, false, true, 28), "theme_custom_main_menu", [], "any", false, false, true, 28), "html", null, true);
+        yield "
+    </div>
+  </div>
+</div>
+";
+        $this->env->getExtension('\Drupal\Core\Template\TwigExtension')
+            ->checkDeprecations($context, ["page"]);        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "@theme_custom/partials/header.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  85 => 28,  77 => 23,  66 => 15,  59 => 11,  53 => 8,  44 => 2,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("", "@theme_custom/partials/header.html.twig", "/var/www/html/web/themes/custom/theme_custom/templates/partials/header.html.twig");
+    }
+    
+    public function checkSecurity()
+    {
+        static $tags = [];
+        static $filters = ["escape" => 2];
+        static $functions = ["attach_library" => 2];
+
+        try {
+            $this->sandbox->checkSecurity(
+                [],
+                ['escape'],
+                ['attach_library'],
+                $this->source
+            );
+        } catch (SecurityError $e) {
+            $e->setSourceContext($this->source);
+
+            if ($e instanceof SecurityNotAllowedTagError && isset($tags[$e->getTagName()])) {
+                $e->setTemplateLine($tags[$e->getTagName()]);
+            } elseif ($e instanceof SecurityNotAllowedFilterError && isset($filters[$e->getFilterName()])) {
+                $e->setTemplateLine($filters[$e->getFilterName()]);
+            } elseif ($e instanceof SecurityNotAllowedFunctionError && isset($functions[$e->getFunctionName()])) {
+                $e->setTemplateLine($functions[$e->getFunctionName()]);
+            }
+
+            throw $e;
+        }
+
+    }
+}
